@@ -8,16 +8,48 @@
 
 body {
   font-family: "poppins", "Times New Roman", Times, serif;
+ 
+}
+
+.container{
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background-color: #faf9f6;
   text-align: center;
-  background-image:
+  flex-direction: column;
+   background-image:
     radial-gradient(at 40% 20%, #f4eddc 0px, transparent 50%),
     radial-gradient(at 80% 0%, #cbc5b7 0px, transparent 50%),
     radial-gradient(at 0% 80%, #a5c4ab 0px, transparent 50%),
     radial-gradient(at 80% 80%, #9fb5cc 0px, transparent 50%),
     radial-gradient(at 0% 0%, #cedbf2 0px, transparent 50%);
+}
+
+nav{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+}
+
+.nav-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 15px 0;
+}
+
+.nav-links a{
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover{
+  color: #4a7c59;
 }
